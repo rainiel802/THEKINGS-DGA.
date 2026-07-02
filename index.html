@@ -1,0 +1,217 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THEKINGS DGA | Abrigos Personalizados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="top-sale-bar">
+    <span>🔥 Envíos disponibles en RD</span>
+    <span>Personaliza tu abrigo con nombre, logo o frase</span>
+    <span>WhatsApp: 809-697-9351, 809-509-8441</span>
+  </div>
+
+  <header class="main-header">
+    <div class="header-left">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <h1 class="logo">THEKINGS <span>DGA</span></h1>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Abrigos</a>
+      <a href="#personaliza">Personaliza</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="searchBtn">🔍</button>
+      <button id="wishlistBtn">♡</button>
+      <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <aside class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">×</button>
+    <h2>THEKINGS DGA</h2>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Abrigos</a>
+    <a href="#personaliza">Personaliza</a>
+    <a href="#ofertas">Ofertas</a>
+    <a href="#contacto">Contacto</a>
+  </aside>
+
+  <section class="search-panel" id="searchPanel">
+    <input type="text" id="searchInput" placeholder="Buscar abrigo, color, diseño..." />
+    <button id="closeSearch">×</button>
+  </section>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="hero-small">Thekings DGA</p>
+        <h2>Abrigos personalizados A tu Estilo</h2>
+        <p>
+          Diseña tu abrigo con nombre, logo, frase, imagen o estilo DGA.
+          Perfectos para regalos, negocios, equipos y promociones.
+        </p>
+        <div class="hero-buttons">
+          <a href="#productos" class="btn primary">Comprar ahora</a>
+          <a href="#personaliza" class="btn secondary">Personalizar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip">
+      <div class="category-card">🔥 Tendencia</div>
+      <div class="category-card">🖤 Negro</div>
+      <div class="category-card">🤍 Blanco</div>
+      <div class="category-card">🎨 Full Color</div>
+      <div class="category-card">👕 Oversize</div>
+      <div class="category-card">🎁 Regalos</div>
+    </section>
+
+    <section class="promo-grid">
+      <div class="promo-card dark">
+        <h3>Si pides el abrigo </h3>
+        <p>Debes dar la mitad alante.</p>
+      </div>
+      <div class="promo-card light">
+        <h3>Personalización premium</h3>
+        <p>Logo, nombre, frase y mockup antes de imprimir.</p>
+      </div>
+      <div class="promo-card dark">
+        <h3>Para negocios</h3>
+        <p>Uniformes, marcas, eventos y equipos.</p>
+      </div>
+    </section>
+
+    <section class="products-section" id="productos">
+      <div class="section-title">
+        <h2>Abrigos destacados</h2>
+        <p>Estilo tipo tienda moderna, rápida y visual.</p>
+    <p id="resultsText">Mostrando 71 productos</p>
+    </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="oferta">Ofertas</button>
+        <button class="filter-btn" data-filter="nuevo">Nuevos</button>
+        <button class="filter-btn" data-filter="premium">Premium</button>
+        <button class="filter-btn" data-filter="negro">Negro</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <section class="custom-section" id="personaliza">
+      <div class="custom-box">
+        <h2>Crea tu abrigo personalizado</h2>
+        <p>
+          Elige color, talla, texto y estilo. Luego envíanos tu pedido por WhatsApp.
+        </p>
+
+        <form id="customForm">
+          <div class="form-group">
+            <label>Nombre o texto</label>
+            <input type="text" id="customText" placeholder="Ej: Juan, Thekins DGA, Feliz Cumpleaños..." />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Color</label>
+              <select id="customColor">
+                <option>Negro</option>
+                <option>Blanco</option>
+                <option>Rojo</option>
+                <option>Azul</option>
+                <option>Gris</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Talla</label>
+              <select id="customSize">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de diseño</label>
+            <select id="customDesign">
+              <option>Nombre frontal</option>
+              <option>Logo en pecho</option>
+              <option>Imagen grande en espalda</option>
+              <option>Frase artística</option>
+              <option>Diseño completo</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn primary full">Enviar pedido por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="offers-section" id="ofertas">
+      <h2>Ofertas relámpago</h2>
+      <div class="countdown">
+        <div><span id="hours">08</span><small>Horas</small></div>
+        <div><span id="minutes">30</span><small>Min</small></div>
+        <div><span id="seconds">00</span><small>Seg</small></div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div>
+        <h3>🚚 Entrega rápida</h3>
+        <p>Disponible para Santo Domingo y envíos nacionales.</p>
+      </div>
+      <div>
+        <h3>🎨 Diseño incluido</h3>
+        <p>Preparamos una vista antes de imprimir.</p>
+      </div>
+      <div>
+        <h3>💬 Atención directa</h3>
+        <p>Pedidos por WhatsApp de forma rápida.</p>
+      </div>
+      <div>
+        <h3>⭐ Calidad premium</h3>
+        <p>Abrigos cómodos, modernos y personalizados.</p>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Carrito</h2>
+      <button id="closeCart">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <p>Total: <strong id="cartTotal">RD$0</strong></p>
+      <button id="checkoutBtn" class="btn primary full">Comprar por WhatsApp</button>
+    </div>
+  </aside>
+
+  <footer id="contacto">
+    <h2>THEKINS DGA</h2>
+    <p>Abrigos personalizados, diseños urbanos y estilo premium.</p>
+    <p>WhatsApp: 809-697-9351, 809-509-8441</p>
+    <p>© 2026 THEKINS DGA. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scrip.js"></script>
+</body>
+</html>
