@@ -6,7 +6,7 @@ const products = [
     oldPrice: 2300,
     category: ["todos", "oferta", "premium", "negro"],
     badge: "-20%",
-    image: "1.jpg"
+    image: "uno.jpg"
   },
   {
     id: 2,
